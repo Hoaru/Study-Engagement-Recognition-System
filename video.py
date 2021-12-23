@@ -1,0 +1,122 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'video.ui'
+#
+# Created by: PyQt5 UI code generator 5.12.1
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(1065, 544)
+        font = QtGui.QFont()
+        font.setBold(True)
+        font.setWeight(75)
+        MainWindow.setFont(font)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.label_screen = QtWidgets.QLabel(self.centralwidget)
+        self.label_screen.setGeometry(QtCore.QRect(13, 11, 651, 441))
+        font = QtGui.QFont()
+        font.setPointSize(30)
+        self.label_screen.setFont(font)
+        self.label_screen.setStyleSheet("background-color: rgb(0, 0, 0);\n"
+"color: rgb(255, 255, 255);")
+        self.label_screen.setText("")
+        self.label_screen.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_screen.setObjectName("label_screen")
+        self.btn_open_camera = QtWidgets.QPushButton(self.centralwidget)
+        self.btn_open_camera.setGeometry(QtCore.QRect(30, 480, 101, 31))
+        font = QtGui.QFont()
+        font.setFamily("Consolas")
+        font.setPointSize(10)
+        font.setBold(False)
+        font.setWeight(50)
+        self.btn_open_camera.setFont(font)
+        self.btn_open_camera.setObjectName("btn_open_camera")
+        self.btn_close_camera = QtWidgets.QPushButton(self.centralwidget)
+        self.btn_close_camera.setGeometry(QtCore.QRect(540, 480, 101, 31))
+        font = QtGui.QFont()
+        font.setFamily("Consolas")
+        font.setPointSize(10)
+        font.setBold(False)
+        font.setWeight(50)
+        self.btn_close_camera.setFont(font)
+        self.btn_close_camera.setObjectName("btn_close_camera")
+        self.label_level = QtWidgets.QLabel(self.centralwidget)
+        self.label_level.setGeometry(QtCore.QRect(770, 80, 181, 41))
+        font = QtGui.QFont()
+        font.setFamily("Consolas")
+        font.setPointSize(12)
+        font.setBold(True)
+        font.setWeight(75)
+        self.label_level.setFont(font)
+        self.label_level.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_level.setObjectName("label_level")
+        self.probar_con_level = QtWidgets.QProgressBar(self.centralwidget)
+        self.probar_con_level.setGeometry(QtCore.QRect(730, 30, 241, 41))
+        self.probar_con_level.setStyleSheet("QProgressBar {\n"
+"   border: 2px solid grey;\n"
+"      text-align: center;\n"
+"}")
+        self.probar_con_level.setProperty("value", 0)
+        self.probar_con_level.setObjectName("probar_con_level")
+        self.btn_post = QtWidgets.QPushButton(self.centralwidget)
+        self.btn_post.setGeometry(QtCore.QRect(160, 480, 101, 31))
+        font = QtGui.QFont()
+        font.setFamily("Consolas")
+        font.setPointSize(10)
+        font.setBold(False)
+        font.setWeight(50)
+        self.btn_post.setFont(font)
+        self.btn_post.setObjectName("btn_post")
+        self.label_onTime = QtWidgets.QLabel(self.centralwidget)
+        self.label_onTime.setGeometry(QtCore.QRect(590, 20, 61, 16))
+        font = QtGui.QFont()
+        font.setPointSize(11)
+        self.label_onTime.setFont(font)
+        self.label_onTime.setStyleSheet("color: rgb(255, 0, 0);")
+        self.label_onTime.setText("")
+        self.label_onTime.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_onTime.setObjectName("label_onTime")
+        self.label_result = QtWidgets.QLabel(self.centralwidget)
+        self.label_result.setGeometry(QtCore.QRect(780, 120, 141, 31))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.label_result.setFont(font)
+        self.label_result.setText("")
+        self.label_result.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_result.setObjectName("label_result")
+        self.line_chart_display = QtWidgets.QGroupBox(self.centralwidget)
+        self.line_chart_display.setGeometry(QtCore.QRect(690, 160, 341, 291))
+        self.line_chart_display.setTitle("")
+        self.line_chart_display.setObjectName("line_chart_display")
+        self.label_level_2 = QtWidgets.QLabel(self.centralwidget)
+        self.label_level_2.setGeometry(QtCore.QRect(770, 460, 181, 41))
+        font = QtGui.QFont()
+        font.setFamily("Consolas")
+        font.setPointSize(12)
+        font.setBold(True)
+        font.setWeight(75)
+        self.label_level_2.setFont(font)
+        self.label_level_2.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_level_2.setObjectName("label_level_2")
+        MainWindow.setCentralWidget(self.centralwidget)
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.btn_open_camera.setText(_translate("MainWindow", "开启摄像头"))
+        self.btn_close_camera.setText(_translate("MainWindow", "关闭摄像头"))
+        self.label_level.setText(_translate("MainWindow", "参与度"))
+        self.btn_post.setText(_translate("MainWindow", "录制并上传"))
+        self.label_level_2.setText(_translate("MainWindow", "参与度变化曲线"))
+
+
